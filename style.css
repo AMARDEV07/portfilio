@@ -17,6 +17,7 @@ body{
     left: 0;
     width: 100%;
    padding: 25px 103px 0px 103px;
+   animation:slidefromleft 2.3s ease forwards;
    /* padding top left right bottom */
    
     background: yellowgreen;
@@ -29,6 +30,18 @@ body{
     
 
 }
+@keyframes slidefromleft{  
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+
 
 
 .logo{
@@ -36,6 +49,7 @@ body{
     color: beige;
     text-decoration: none;
     font-weight: 600;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
@@ -46,6 +60,7 @@ body{
     font-weight: 600;
     margin-left: 35px;
     transition: 2s;
+    
 }
 .navbar a:hover,
     .navbar a.active{
@@ -53,6 +68,7 @@ body{
     
     
 }
+
 
 
 
@@ -70,7 +86,20 @@ body{
 
 .home-content{
     max-width: 600px;
+    animation:slidefromleft 2.3s ease forwards;
 }
+@keyframes slidefromleft{  
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+
 .home-content h1{
 
     font-size: 56px;
